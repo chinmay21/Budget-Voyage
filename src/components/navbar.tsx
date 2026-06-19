@@ -1,4 +1,5 @@
 import NavLink from "./NavLink";
+import Link from "next/link";
 
 export default function Navbar() {
     return (
@@ -24,11 +25,12 @@ export default function Navbar() {
                 }}
             >
                 {/* Logo */}
-                <div
-                    style={{
-                        marginTop: "10px"
-                    }}
-                >
+                <Link href={"/"}>
+                    <div
+                        style={{
+                            marginTop: "10px"
+                        }}
+                    >
                     <img
                         src="/asset/logo.png"
                         loading="lazy"
@@ -39,6 +41,8 @@ export default function Navbar() {
                     />
                 </div>
 
+                </Link>
+
                 {/* Nav Links */}
                 <div
                     style={{
@@ -47,7 +51,7 @@ export default function Navbar() {
                         gap: "2rem",
                     }}
                 >
-                    <NavLink href="/plan-trip">Plan Trip</NavLink>
+                    <NavLink href="/plan">Plan Trip</NavLink>
                     <NavLink href="https://digitalheroesco.com" isExternal>
                         Built for Digital Heroes
                     </NavLink>

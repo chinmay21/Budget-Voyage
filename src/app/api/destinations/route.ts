@@ -6,7 +6,7 @@ export async function GET() {
     try{
         await dbConnect();
 
-        const destinations = await Destination.find({}, "city country slug");
+        const destinations = await Destination.find({});
 
         return NextResponse.json({
             success: true,
