@@ -1,5 +1,6 @@
 import NavLink from "./NavLink";
 import Link from "next/link";
+import DeveloperDropdown from "./DeveloperDropdown";
 
 export default function Navbar() {
     return (
@@ -51,6 +52,7 @@ export default function Navbar() {
                         gap: "2rem",
                     }}
                 >
+                    <DeveloperDropdown/>
                     <NavLink href="/plan">Plan Trip</NavLink>
                     <NavLink href="https://digitalheroesco.com" isExternal>
                         Built for Digital Heroes
