@@ -1,65 +1,61 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="bg-[#F0E7D5] text-[#212842] h-fit">
+      <div className="flex justify-center py-30 flex-col items-center gap-y-5 pt-25">
+        <p className="font-bold text-5xl">Plan smarter trips with real budget clarity</p>
+        <p className="text-lg mt-5">
+          Voyago helps you instantly calculate the real cost of your trip before you book.
+          Get accurate estimates for flights, hotels, food, transport, and activities based on your destination and budget
+        </p>
+        <div>
+          <Link href={'/plan-trip'}>
+            <button className="text-lg mt-5 bg-[#212842] rounded-lg hover:scale-x-110 transition-all ease-out duration-100
+            cursor-pointer delay-100">
+            <p className="text-[#F0E7D5] px-5 py-1.5">Start Planning</p>
+          </button>
+          </Link>
+        </div>
+
+        <div className="bg-[#212842] text-[#F0E7D5] py-15 px-10 mt-30">
+          <p className="font-bold text-5xl">WHAT THE APP DOES</p>
+
+          <p className="text-lg mt-5 mb-5">
+            Voyago is a travel planner that helps you understand exactly how much your trip will cost.
+            Instead of guessing expenses, you enter your destination, budget, and travel details — and the system
+            breaks down every cost category for you.
           </p>
+
+          <div>
+            <p className="mb-3 text-lg">It helps you:</p>
+
+            <ul className="text-sm md:text-lg font-medium space-y-2 list-disc pl-7">
+            <li>Avoid overspending</li>
+            <li>Compare destinations by cost</li>
+            <li>Plan trips within your budget</li>
+            <li>Make faster travel decisions</li>
+          </ul>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </div>
+
+      <div className="">
+          <p>HOW IT WORKS</p>
+
+          <div>
+            <p>Step 1: Choose Destination</p>
+            <p>Select where you want to travel.</p>
+          </div>
+          <div>
+            <p>Step 2: Set Budget & Details</p>
+            <p>Enter your budget, number of travelers, and trip duration.</p>
+          </div>
+          <div>
+            <p>Step 3: Get Full Cost Breakdown</p>
+            <p>Receive an estimate of your complete trip cost.</p>
+          </div>
+      </div>
     </div>
   );
 }
