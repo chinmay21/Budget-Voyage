@@ -1,36 +1,169 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 Budget Voyage
 
-## Getting Started
+Budget Voyage is a smart trip-planning web application that helps travelers discover destinations and estimate travel expenses based on their budget, trip duration, and number of travelers.
 
-First, run the development server:
+Instead of manually calculating expenses for different destinations, Budget Voyage provides an instant and personalized travel plan, making budget travel planning simple and accessible.
+
+---
+
+## ✨ Features
+
+- 🏖️ Browse different travel destinations
+- 💰 Get trip recommendations based on your budget
+- 📅 Plan trips according to the number of days
+- 👥 Calculate expenses for solo or group travel
+- ⚡ Instant trip cost estimation
+- 📱 Fully responsive and modern user interface
+- 🎯 Simple and user-friendly experience
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- Next.js
+- React.js
+- TypeScript
+- Tailwind CSS
+
+### Backend
+- Next.js API Routes
+- Node.js
+
+### Database
+- MongoDB
+- Mongoose
+
+---
+
+## 📸 Screenshots
+
+### Homepage
+
+![Homepage](./public/asset/homepage.png)
+
+---
+
+### Plan Trip Page
+
+![Plan Trip](./public/asset/plan-trip.png)
+
+---
+
+### Result Page
+
+![Result](./public/asset/result.png)
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/chinmay21/Budget-Voyage.git
+```
+
+### Navigate to the project
+
+```bash
+cd Budget-Voyage
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Configure environment variables
+
+Create a `.env.local` file in the root directory:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+```
+
+### Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📂 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+Budget-Voyage
+│
+├── app/
+├── components/
+├── model/
+├── lib/
+├── utils/
+├── public/
+│   └── asset/
+├── types/
+└── README.md
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Future Improvements
 
-## Deploy on Vercel
+- User authentication
+- Save favorite trips
+- Hotel recommendations
+- Weather integration
+- Maps integration
+- AI-powered itinerary generation
+- Share trip plans with friends
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome.
+
+1. Fork the repository
+2. Create your feature branch
+
+```bash
+git checkout -b feature/your-feature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push to the branch
+
+```bash
+git push origin feature/your-feature
+```
+
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+<div align="center">
+
+### ✈️ Budget Voyage
+**Plan Smart. Travel More. Spend Less.**
+
+</div>
